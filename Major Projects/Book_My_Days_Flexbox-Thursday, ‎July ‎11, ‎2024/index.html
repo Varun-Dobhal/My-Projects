@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo.png">
+        
+        <title>Book My Days &mdash; Your all-in-one booking app</title>
+    </head>
+        <body>
+            <div class="container">
+
+                <section class="HEADER">
+                    <header class="header">
+                        <div >
+                            <img src="img/logo.png" alt="Logo"class="logo">
+                        </div>
+                        <form class="search" action="#">
+                            <input type="text" placeholder="Search Hotels" class="search__input">
+                            <button class="search__button">
+                                <svg class="search__icon">
+                                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <nav class="user-nav">
+                            <div class="user-nav__icon-box">
+                                <svg class="user-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                                </svg>    
+                                <span class="user-nav__notification">7</span>
+                            </div>
+                            <div class="user-nav__icon-box">
+                                <svg class="user-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chat"></use>
+                                </svg>    
+                                <span class="user-nav__notification">14</span>
+                            </div>
+                            <div class="user-nav__user">
+                                <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                                <span class="user-nav__user-name">Varun Dobhal</span>
+                            </div>
+                        </nav>
+                    </header>
+                </section>
+                
+                
+                <div class="content">
+                    
+                    <nav class="sidebar">
+                        <ul class="side-nav">
+                            <li class="side-nav__item side-nav__item--active">
+                                <a href="#" class="side-nav__link">
+                                    <svg class="side-nav__icon">
+                                        <use xlink:href="img/sprite.svg#icon-home"></use>
+                                    </svg>
+                                    <span>Hotel</span>
+                                </a>
+                            </li>
+
+                            <li class="side-nav__item">
+                                <a href="#" class="side-nav__link">
+                                    <svg class="side-nav__icon">
+                                        <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                    </svg>
+                                    <span>Flight</span>
+                                </a>
+                            </li>
+
+                            <li class="side-nav__item">
+                                <a href="#" class="side-nav__link">
+                                    <svg class="side-nav__icon">
+                                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                                    </svg>
+                                    <span>Car Rental</span>
+                                </a>
+                            </li>
+
+                            <li class="side-nav__item">
+                                <a href="#" class="side-nav__link">
+                                    <svg class="side-nav__icon">
+                                        <use xlink:href="img/sprite.svg#icon-map"></use>
+                                    </svg>
+                                    <span>Tours</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="legal">
+                            &copy 2024 by Varun. All rights Reserved.
+                        </div>
+                    </nav>
+
+
+
+
+
+                    <main class="hotel-view">
+                        <div class="gallery">
+                            <figure class="gallery__item">
+                                <img src="img/hotel-1.png" alt="photo" class="gallery__photo">
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/hotel-2.jpg" alt="photo" class="gallery__photo">
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/hotel-3.jpg" alt="photo" class="gallery__photo">
+                            </figure>
+                        </div>
+
+                        <div class="overview">
+                            <h1 class="overview__heading">Hyatt Regency</h1>
+                            <div class="overview__stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                            <div class="overview__location">
+                                <svg class="overview__icon-location">
+                                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <button class="btn-inline">Dehradun</button>
+                            </div>
+                            <div class="overview__rating">
+                                <div class="overview__rating-average">8.2</div>
+                                <div class="overview__rating--count">102 votes</div>
+                            </div>
+                        </div>
+                       
+                        <div class="detail">
+
+                            <div class="desc">
+                                <p class="paragraph">
+                                    Hyatt Regency Dehradun Resort and Spa, located on the foothills of the Himalayas, features 263 guest accommodations, including 24 spacious suites and interconnecting and balcony rooms—each overlooking the picturesque Malsi Reserved Forest or the majestic Himalayan mountains.
+                                </p>
+                                <p class="paragraph">
+                                    Immerse yourself in the world of Hyatt, where you can embrace the transformative power of travel and experience once-in-a-lifetime moments.We gladly welcome your most cherished travel companions, whether they’re dogs or cats. Please inform us you’ll bring your pet(s) with you at least three days before arrival.
+                                </p>
+
+                                <ul class="list">
+                                    <li class="list__item">Business Services</li>
+                                    <li class="list__item">Free Internet Access</li>
+                                    <li class="list__item">Meeting Facilities</li>
+                                    <li class="list__item">On-Site Restaurant</li>
+                                    <li class="list__item">Camp Hyatt</li>
+                                    <li class="list__item">Resort Property</li>
+                                    <li class="list__item">Fitness Center</li>
+                                    <li class="list__item">Pet Friendly</li>
+                                </ul>
+                                <div class="recomnd">
+                                    <p class="recomnd__count">
+                                        Varun and his family recommend this Hotel.
+                                    </p>
+                                    <div class="recomnd__friends">
+                                        <img src="img/user-3.jpg" alt="" class="recomnd__photo">
+                                        <img src="img/user-4.jpg" alt="" class="recomnd__photo">
+                                        <img src="img/user-5.jpg" alt="" class="recomnd__photo">
+                                        <img src="img/user-6.jpg" alt="" class="recomnd__photo">
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+
+                            <div class="user-review">
+
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Come experience the might of the mountains and the warmth of a valley.Grand Hyatt Jeju is the largest Grand Hyatt in Asia Pacific, opening as part of Jeju Dream Tower. 
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-1.jpg" alt="User 1" class="review__photo">
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Varun</p>
+                                            <p class="review__user-date">Feb 23rd, 2017</p>
+                                        </div>
+                                        <div class="review__rating">7.8</div>
+                                    </figcaption>
+                                </figure>
+                            
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Come experience the might of the mountains and the warmth of a valley.Grand Hyatt Jeju is the largest Grand Hyatt in Asia Pacific, opening as part of Jeju Dream Tower. 
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-2.jpg" alt="User 1" class="review__photo">
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Dobhal</p>
+                                            <p class="review__user-date">Sept 13th, 2017</p>
+                                        </div>
+                                        <div class="review__rating">9.3</div>
+                                    </figcaption>
+                                </figure>
+                                
+                                <button class="btn-inline">Show all <span>→</span></button>
+                            </div>
+
+                        </div>
+
+                        <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have 4 free rooms for your selected dates!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book Now</span>
+                                <span class="btn__not-visible">Only four rooms left!</span>
+                            </button>
+                        </div>
+
+                    </main>
+                
+                
+                </div>
+            </div>
+        </body>
+
+</html>

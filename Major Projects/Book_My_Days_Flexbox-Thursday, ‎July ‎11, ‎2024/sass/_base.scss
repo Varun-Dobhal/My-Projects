@@ -1,0 +1,55 @@
+:root {
+    --color-Primary:#008080;
+    --color-Primary-light:#90E4C1;
+    --color-Primary-dark:#014D4E;
+    --color-Grey-light-1:#faf9f9;
+    --color-Grey-light-2:#f4f2f2;
+    --color-Grey-light-3:#f0eeee;
+    --color-Grey-light-4:#ccc;
+    --color-Grey-dark-1:#333;
+    --color-Grey-dark-2:#777;
+    --color-Grey-dark-3:#999;
+    --shadow-light:0 2rem 6rem rgba(0,0,0,0.3);
+    --shadow-dark:0 2rem 5rem rgba(0, 0, 0,0.6);
+    --line: 1px solid var(--color-Grey-light-2);
+}
+// SASS VARIABLES
+$bp-largest:75em;//1200px
+$bp-large:56.25em;//900px
+$bp-medium:37.5em;//600px
+$bp-small:25em;//400px
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem
+
+    @media only screen and(max-width:$bp-large){
+        font-size: 50%;
+        margin: 0;
+    }
+    @media only screen and(max-width:$bp-medium){
+        font-size: 40%;
+        margin: 0;
+    }
+    
+}
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family:'open sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-Primary-light), var(--color-Primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-Grey-dark-2);
+
+    min-height: 100vh;
+    
+}
