@@ -383,7 +383,7 @@
         box-sizing: content-box;
         
         &:not(:last-child){
-            margin-right: 2rem;
+            margin-right: -2rem;
             @media only screen and(max-width:$bp-large){
                 margin-right: -2rem;
             }
