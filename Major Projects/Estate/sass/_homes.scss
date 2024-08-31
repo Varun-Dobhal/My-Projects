@@ -1,0 +1,74 @@
+.homes{
+  grid-column: center-start/center-end;
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  grid-gap: 7rem;
+}
+.home{
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  ion-icon{
+    height: 2rem;
+    width: 2rem;
+    color:$color-primary;
+    grid-row: 2/1;
+    grid-column: 2/3;
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem;
+  }
+
+  &__img{
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 1;
+  }
+  &__name{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 1;
+    align-self: end;
+    transform: translateY(50%);
+    
+    font-family: $font-display;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: $color-secondary;
+    color: white;
+    font-weight: 500;
+    width: 80%;
+    justify-self:center;
+  }
+  &__location,
+  &__room{
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  &__location,
+  &__price,
+  &__room,
+  &__area{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    ion-icon{
+      color: $color-primary;
+      height: 3rem;
+      width: 3rem;
+      margin-right: 1rem;
+    } 
+  }
+  &__btn{
+    margin-top: 2rem;
+    grid-column: 1/-1;
+  }
+}

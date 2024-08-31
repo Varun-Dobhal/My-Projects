@@ -1,0 +1,57 @@
+.header{
+  background-color: $color-grey-dark-1;
+  grid-column: full-start/ col-end 6;
+  padding: 8rem;
+  padding-top: 4rem;
+  
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem,min-content) 1fr;
+  grid-template-columns: minmax(min-content,max-content);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+  
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/lance-reis-MmZ4aBq94QI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and(max-width:$bp-m){
+    grid-column: 1/-1;
+  }
+
+  &__logo{
+    height: 5rem;
+    justify-self: center;
+  }
+  &__seenon-text{
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-column-gap: 1.5rem;
+    &::before,
+    &::after{
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+  &__seenon-logos{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    img{
+      max-height: 2.5rem;
+      max-width: 100%;
+      filter: brightness(70%);
+    }
+  }
+  &__btn{
+    align-self: start;
+    justify-self: start;
+  }
+}
