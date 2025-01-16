@@ -1,0 +1,233 @@
+:root {
+  --color-brand--1: #c28f2c; /* Vintage gold */
+  --color-brand--2: #6b9478; /* Soft olive green */
+
+  --color-dark--1: #3e3b3a; /* Deep charcoal */
+  --color-dark--2: #554e4a; /* Warm brownish-gray */
+  --color-light--1: #d4c6b9; /* Soft beige */
+  --color-light--2: #f4efe8; /* Off-white/cream */
+  --color-light--3: #e8ddd3; /* Light tan */
+
+  --shadow-small: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-large: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--color-dark--2);
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  background: linear-gradient(135deg, #ede7e3, var(--color-light--2));
+  display: flex;
+  padding: 2rem;
+}
+
+/* GENERAL */
+a:link,
+a:visited {
+  color: var(--color-brand--1);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: var(--color-brand--2);
+}
+
+/* SIDEBAR */
+.sidebar {
+  flex-basis: 50rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-dark--1),
+    var(--color-dark--2)
+  );
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-large);
+}
+
+.logo {
+  height: 5.2rem;
+  align-self: center;
+  margin-bottom: 3.5rem;
+}
+
+.workouts {
+  list-style: none;
+  height: 77vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.workouts::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.workouts::-webkit-scrollbar-thumb {
+  background-color: var(--color-light--1);
+  border-radius: 1rem;
+}
+
+.workout {
+  background-color: var(--color-dark--2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-small);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.workout:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-large);
+}
+
+.workout--running {
+  border-left: 5px solid var(--color-brand--2);
+}
+
+.workout--cycling {
+  border-left: 5px solid var(--color-brand--1);
+}
+
+.workout__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  color: var(--color-light--2);
+}
+
+.workout__details {
+  display: flex;
+  align-items: baseline;
+}
+
+.workout__icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.workout__value {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.workout__unit {
+  font-size: 1.2rem;
+  color: var(--color-light--1);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* FORM */
+.form {
+  background-color: var(--color-dark--2);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow-small);
+}
+
+.form.hidden {
+  transform: translateY(-30rem);
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.form__row {
+  display: flex;
+  align-items: center;
+}
+
+.form__label {
+  flex: 0 0 45%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-light--1);
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-light--3);
+  transition: all 0.2s ease;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 5px var(--color-brand--1);
+}
+
+.copyright {
+  margin-top: auto;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-light--1);
+}
+
+/* MAP */
+#map {
+  flex: 1;
+  height: 100%;
+  background-color: var(--color-light--1);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-large);
+}
+
+/* Popup Styling */
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: var(--color-dark--1);
+  color: var(--color-light--2);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1.5rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: var(--color-dark--1);
+}
+
+.running-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid var(--color-brand--2);
+}
+
+.cycling-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid var(--color-brand--1);
+}

@@ -1,0 +1,78 @@
+// Updated _searchResults.scss
+.search-results {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  color: $color-grey-dark-1; // Dark gray text for readability
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 4px solid $color-primary; // Sky blue accent for results
+  color: $color-grey-dark-1; // Dark text for contrast
+
+  li {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: $color-grey-dark-1; // Dark text for readability
+
+    &:hover {
+      color: $color-primary; // Highlight color on hover
+      cursor: pointer;
+    }
+  }
+}
+
+.pagination {
+  margin-top: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-grey-dark-1; // Dark text for pagination
+
+  &__btn {
+    background-color: $color-grey-light-2; // Soft gray background for buttons
+    padding: 0.8rem 1.6rem;
+    color: $color-grey-dark-1; // Dark text for contrast
+    border-radius: 5px;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-grey-light-2, 10%); // Slight hover darken
+    }
+
+    &--prev {
+      margin-right: auto;
+    }
+
+    &--next {
+      margin-left: auto;
+    }
+  }
+}
+
+.copyright {
+  color: $color-grey-light-3; // Soft gray for copyright text
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  margin-top: 4rem;
+  text-align: center;
+
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: $color-primary; // Sky blue color for links
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .twitter-link:hover {
+    text-decoration: underline; // Underline on hover for links
+    color: $color-grey-dark-1; // Darker color on hover
+  }
+}
